@@ -14,12 +14,11 @@ License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyphen-russian.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
-Requires:	texlive-hyphen-base
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-hyphen-base
 Requires:	texlive-hyph-utf8
 Requires:	texlive-ruhyphen
 Conflicts:	texlive-texmf <= 20110705-3
-Requires(post):	texlive-hyphen-base
 
 %description
 Hyphenation patterns for Russian in T2A and UTF-8 encodings.
