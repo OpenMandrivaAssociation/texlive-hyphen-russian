@@ -51,12 +51,12 @@ in the future.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-russian <<EOF
-%% from hyphen-russian:
+\%\% from hyphen-russian:
 russian loadhyph-ru.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-russian <<EOF
-%% from hyphen-russian:
+\%\% from hyphen-russian:
 \addlanguage{russian}{loadhyph-ru.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
