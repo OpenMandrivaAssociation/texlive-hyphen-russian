@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-russian
-Version:	20111103
-Release:	2
+Version:	20120124
+Release:	1
 Summary:	Russian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -51,14 +51,16 @@ in the future.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-russian <<EOF
-\%\% from hyphen-russian:
+\%% from hyphen-russian:
 russian loadhyph-ru.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-russian
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-russian <<EOF
-\%\% from hyphen-russian:
+\%% from hyphen-russian:
 \addlanguage{russian}{loadhyph-ru.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-russian
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-russian <<EOF
 -- from hyphen-russian:
