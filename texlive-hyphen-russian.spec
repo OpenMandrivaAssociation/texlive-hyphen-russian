@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-russian
 Version:	20120124
-Release:	6
+Release:	7
 Summary:	Russian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
