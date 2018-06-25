@@ -1,5 +1,5 @@
 Name:		texlive-hyphen-russian
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Russian hyphenation patterns
 Group:		Publishing
