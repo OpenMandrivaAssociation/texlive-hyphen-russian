@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-russian
-Version:	20180303
-Release:	3
+Version:	20181105
+Release:	1
 Summary:	Russian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
